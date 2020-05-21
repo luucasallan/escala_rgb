@@ -34,7 +34,7 @@ var box = null;
 /**
  * @type {HTMLInputElement}
  */
-var main = null;
+var caixaInvertRGB = null;
 
 //para startar a aplicação
 function start() {
@@ -48,7 +48,7 @@ function start() {
   onBlue = document.querySelector('#onBlue');
   // div
   box = document.querySelector('#caixaRGB');
-  main = document.querySelector('#main');
+  caixaInvertRGB = document.querySelector('#caixaInvertRGB');
   activateRenge();
   preventFormSubmit();
 }
@@ -101,10 +101,11 @@ function activateRenge() {
     var color = inR + ',' + inG + ',' + inB;
     box.style.background = "rgb(" + color + ")";
 
-    var inverted = `${~Number.parseInt(inR) & 255},
-                    ${~Number.parseInt(inG) & 255},
-                    ${~Number.parseInt(inB) & 255}`
-    main.style.background = "rgb(" + inverted  + ")";
+    var inverted = `${
+      ~Number.parseInt(inR) & 255}, ${
+      ~Number.parseInt(inG) & 255}, ${
+      ~Number.parseInt(inB) & 255}`
+     caixaInvertRGB.style.background = "rgb(" + inverted  + ")";
 
 
   }
