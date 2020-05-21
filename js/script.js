@@ -4,12 +4,33 @@ window.addEventListener('load', start);
 
 //variaveis global
 var red = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var green = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var blue = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var onRed = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var onGreen = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var onBlue = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var rgb = null;
+/**
+ * @type {HTMLInputElement}
+ */
 var box = null;
 
 
@@ -33,9 +54,12 @@ function start() {
 }
 
 function preventFormSubmit() {
-
-  function handleFormSubmit(ev) {
-    ev.preventDefault();
+   /**
+   * 
+   * @param {Event & {target: HTMLInputElement}} e 
+   */
+  function handleFormSubmit(e) {
+    e.preventDefault();
   }
   var form = document.querySelector('form');
   form.addEventListener('submit', handleFormSubmit);
@@ -46,22 +70,34 @@ function activateRenge() {
   green.addEventListener('input', inGreen);
   blue.addEventListener('input', inBlue);
 
-  var inR = 0;
+  var inR = '0';
+  /**
+   * 
+   * @param {Event & {target: HTMLInputElement}} e 
+   */
   function inRed(e) {
     inR = e.target.value;
     onRed.value = inR;
     rgb();
   }
 
-  var inG = 0;
+  var inG = '0';
+   /**
+   * 
+   * @param {Event & {target: HTMLInputElement}} e 
+   */
   function inGreen(e) {
     inG = e.target.value;
     onGreen.value = inG;
     rgb();
-
   }
+  
 
-  var inB = 0;
+  var inB = '0';
+  /**
+   * 
+   * @param {Event & {target: HTMLInputElement}} e 
+   */
   function inBlue(e) {
     inB = e.target.value;
     onBlue.value = inB;
@@ -69,7 +105,9 @@ function activateRenge() {
   }
 
   function rgb() {
+
     var color = inR + ',' + inG +','+ inB;
+    
     box.style.background = "rgb(" + color + ")";
 
   }
