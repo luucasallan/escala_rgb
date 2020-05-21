@@ -50,7 +50,6 @@ function activateRenge() {
   function inRed(e) {
     inR = e.target.value;
     onRed.value = inR;
-    console.log(inR);
     rgb(inR);
   }
 
@@ -58,7 +57,6 @@ function activateRenge() {
   function inGreen(e) {
     inG = e.target.value;
     onGreen.value = inG;
-    console.log(inG);
     rgb(inG);
 
   }
@@ -71,9 +69,7 @@ function activateRenge() {
   }
 
   function rgb() {
-
     var color = inR + ',' + inG +','+ inB;
-    
     box.style.background = "rgb(" + color + ")";
 
   }
