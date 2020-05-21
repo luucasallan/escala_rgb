@@ -1,3 +1,4 @@
+// @ts-check
 // para executar só quando a página terminar de carregar
 window.addEventListener('load', start);
 
@@ -9,6 +10,7 @@ var onRed = null;
 var onGreen = null;
 var onBlue = null;
 var rgb = null;
+var box = null;
 
 
 //para startar a aplicação
@@ -23,9 +25,7 @@ function start() {
   onBlue = document.querySelector('#onBlue');
   // div
   box = document.querySelector('#caixaRGB');
-
-
-
+  
   //-----------------------------------------//
 
   activateRenge();
@@ -77,5 +77,7 @@ function activateRenge() {
     box.style.background = "rgb(" + color + ")";
 
   }
+  rgb();
 
 }
+
