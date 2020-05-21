@@ -46,7 +46,7 @@ function activateRenge() {
   green.addEventListener('input', inGreen);
   blue.addEventListener('input', inBlue);
 
-  var inR;
+  var inR = 0;
   function inRed(e) {
     inR = e.target.value;
     onRed.value = inR;
@@ -54,7 +54,7 @@ function activateRenge() {
     rgb(inR);
   }
 
-  var inG;
+  var inG = 0;
   function inGreen(e) {
     inG = e.target.value;
     onGreen.value = inG;
@@ -63,7 +63,7 @@ function activateRenge() {
 
   }
 
-  var inB;
+  var inB = 0;
   function inBlue(e) {
     inB = e.target.value;
     onBlue.value = inB;
@@ -71,6 +71,7 @@ function activateRenge() {
   }
 
   function rgb() {
+
     var color = inR + ',' + inG +','+ inB;
     
     box.style.background = "rgb(" + color + ")";
