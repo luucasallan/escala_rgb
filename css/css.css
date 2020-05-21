@@ -72,24 +72,54 @@ input[type='text'] {
   text-align: center;
 }
 
-#caixaRGB {
+.center{
   margin: 20px auto 0 auto;
+  width: 404px;
+
+  
+}
+
+#caixaRGB {
+  margin-top: 20px;
+  margin-bottom: 20px;
   width: 200px;
   height: 200px;
   border: solid 1px rgba(35, 157, 179, 0.562);
   border-radius: 2px;
+  float: left;
+
+}
+#caixaInvertRGB{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  border: solid 1px rgba(35, 157, 179, 0.562);
+  border-radius: 2px;
+  float: right;
+
 }
 
 footer {
+  clear: both;
+  margin: 50px;
+
 }
 footer>p {
   text-align: center;
-  margin: 10px;
+  margin: 50px;
   font-size: 0.6em;
 }
 
-#pTxt{
-  color: white;
-  text-align: center;
-  margin: 35% 20%;
+.hText1{
+  position: absolute;
+  left: 270px;
+ 
+  
+}
+.hText2{
+  position: absolute;
+  left: 420px;
+  
+  
 }
