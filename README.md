@@ -1,4 +1,5 @@
-#Instruções
+# Instruções
+
 Informações sobre o Trabalho Prático
 
 O Trabalho Prático do Módulo 1 está disponível! Consulte a data de entrega no teste e em seu calendário.
@@ -26,7 +27,7 @@ Utilização de funções com JavaScript e CSS.
 Manipulação direta de CSS com JavaScript.
  
 
-##Enunciado
+### Enunciado
 
 Construa, utilizando HTML, CSS e JavaScript puro, uma aplicação para a visualização de cores a partir da escala RGB.
 
