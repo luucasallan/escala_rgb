@@ -46,21 +46,35 @@ function activateRenge() {
   green.addEventListener('input', inGreen);
   blue.addEventListener('input', inBlue);
 
+  var inR;
   function inRed(e) {
     inR = e.target.value;
     onRed.value = inR;
+    console.log(inR);
+    rgb(inR);
   }
 
+  var inG;
   function inGreen(e) {
-    var inG = e.target.value;
+    inG = e.target.value;
     onGreen.value = inG;
+    console.log(inG);
+    rgb(inG);
 
   }
 
+  var inB;
   function inBlue(e) {
-    var inB = e.target.value;
+    inB = e.target.value;
     onBlue.value = inB;
+    rgb(inB);
   }
 
+  function rgb() {
+    var color = inR + ',' + inG +','+ inB;
+    
+    box.style.background = "rgb(" + color + ")";
+
+  }
 
 }
