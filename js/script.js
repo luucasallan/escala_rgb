@@ -50,14 +50,14 @@ function activateRenge() {
   function inRed(e) {
     inR = e.target.value;
     onRed.value = inR;
-    rgb(inR);
+    rgb();
   }
 
   var inG = 0;
   function inGreen(e) {
     inG = e.target.value;
     onGreen.value = inG;
-    rgb(inG);
+    rgb();
 
   }
 
@@ -65,7 +65,7 @@ function activateRenge() {
   function inBlue(e) {
     inB = e.target.value;
     onBlue.value = inB;
-    rgb(inB);
+    rgb();
   }
 
   function rgb() {
