@@ -87,3 +87,9 @@ footer>p {
   margin: 10px;
   font-size: 0.6em;
 }
+
+#pTxt{
+  color: white;
+  text-align: center;
+  margin: 35% 20%;
+}
