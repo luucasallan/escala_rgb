@@ -19,7 +19,4 @@ Para definir a cor da div, utilize _style.backgroundColor_. O valor deve ser uma
 
 ## Projeto feito
 
-[[https://github.com/luucasallan/escala_rgb/blob/master/projeto_escala_rgb.gif|alt=Imagem do projeto feito]]
-
-
 ![alt text](https://github.com/luucasallan/escala_rgb/blob/master/projeto_escala_rgb.gif)
